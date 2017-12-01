@@ -164,8 +164,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
-			<scope>test</scope>
+			<version>${org.springframework-version}</version>			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -195,11 +194,11 @@
 	<repositories>
 		<!-- For testing against latest Spring snapshots -->
 		<repository>
-			<id>org.springframework.maven.snapshot</id>
+			<id>org.springframework.maven.release</id>
 			<name>Spring Maven Snapshot Repository</name>
-			<url>http://repo.spring.io/snapshot</url>
-			<releases><enabled>false</enabled></releases>
-			<snapshots><enabled>true</enabled></snapshots>
+			<url>http://repo.spring.io/release</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
 		</repository>
 		<!-- For developing against latest Spring milestones -->
 		<repository>
@@ -227,9 +226,8 @@
 				<version>2.12</version>
 				<configuration>
 					<includes>
-						<include>**/*Tests.java</include>
-					</includes>
-					<excludes>
+						<include>**/*Tests.java</include>					</includes>
+					<excludes
 						<exclude>**/Abstract*.java</exclude>
 					</excludes>
 					<junitArtifactName>junit:junit</junitArtifactName>
