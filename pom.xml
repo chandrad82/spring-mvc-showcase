@@ -164,7 +164,8 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>			<scope>test</scope>
+			<version>${org.springframework-version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -226,8 +227,9 @@
 				<version>2.12</version>
 				<configuration>
 					<includes>
-						<include>**/*Tests.java</include>					</includes>
-					<excludes
+						<include>**/*Tests.java</include>
+					</includes>
+					<excludes>
 						<exclude>**/Abstract*.java</exclude>
 					</excludes>
 					<junitArtifactName>junit:junit</junitArtifactName>
